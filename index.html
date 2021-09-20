@@ -1,12 +1,3 @@
-<!-- menu bg color #333 -->
-<!-- row bg color #f1f1f1 or #ffffff -->
-<!-- thead color #36304a -->
-<!-- thead text #fff -->
-<!-- tbody even #eee -->
-<!-- tbody odd #fff -->
-<!-- footer color #212121 -->
-<!-- padding top bottom for some row is 60px. -->
-
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -26,10 +17,11 @@
 <body>
 	
 	<!-- navbars -->
-	<nav class="navbar navbar-expand-sm navbar-light">
+	<section class="bg-dark py-2">
+	<nav class="navbar navbar-expand-md">
 		<div class="container-md">
 			<a href="#intro" class="navbar-brand">
-				<span class="fw-bold text-secondary">
+				<span class="fw-bold text-light">
 					<i class="bi bi-book-half"></i>
 					HOME
 				</span>
@@ -43,7 +35,7 @@
 
             <!-- navbar links -->
             <div class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
-                <ul class="navbar-nav">
+                <ul class="navbar-nav text-light">
                   <li class="nav-item">
                     <a class="nav-link" href="#about">ABOUT</a>
                   </li>
@@ -64,16 +56,16 @@
               </div>
 		</div>
 	</nav>
+	</section>
 	
     <!-- main image & intro txt -->
-	<section id="intro" class="pt-6 text-center bg-image"
+	<section id="intro" class="text-center bg-image"
     style="background-image: url('https://mdbcdn.b-cdn.net/img/new/slides/041.jpg');
-    height: 400px;
+    height: 380px;
     background-color: rgba(0,0,0,0.6);
     background-repeat: no-repeat;
     background-size: cover;
     background-blend-mode: overlay;">
-        <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
             <div class="d-flex justify-content-center align-items-center h-100">
                 <div class="text-white">
                     <h2>
@@ -82,20 +74,19 @@
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
                     <!-- offcanvas -->
                     <h5>
-					<a href="#sidebar" class="btn btn-outline-light btn-m mt-5 mb-3" data-bs-toggle="offcanvas"
+					<a href="#sidebar" class="btn btn-outline-light btn-m mt-5" data-bs-toggle="offcanvas"
 						role="button" aria-controls="sidebar">
 						BOOK A TRIP
 					</a>
 					
                 </div>
             </div>
-		</div>
     </section>
 
 	<!-- mission -->
 	<section id="mission">
         <div class="container-md">
-            <div class="row g-5 justify-content-center align-items-center">
+            <div class="row g-3 justify-content-center align-items-center">
                 <div class="col-8 col-lg-4">
 				    <h3>Our mission</h3>
 					<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
@@ -105,7 +96,7 @@
                         Voluptatibus sint minima hic magnam quos aspernatur labore
                         repudiandae.</p>
                 </div>
-				<div class="col-lg-4">
+				<div class="col-8 col-lg-4">
 				    <img src="mt.jpg" class="img-fluid" alt="mt rashmore">
 				</div>
             </div>
@@ -113,7 +104,7 @@
     </section>
 	
 	<!-- experiences & core values -->
-	<section id="experience">
+	<section id="experience" class="bg-light mt-5">
         <div class="container-md">
             <div class="row g-5 justify-content-center align-items-center">
                 <div class="col-8 col-lg-4">
@@ -142,7 +133,7 @@
 	<!-- trip table -->
 	<section id="table">
 
-        <div class="container-md col-10 col-lg-5">
+        <div class="container-md col-11 col-lg-6">
 		<div class="text-center mb-5">
 			<div>
 				<h4>BEST TIME TO BOOK A TRIP</h4>
@@ -209,10 +200,29 @@
 	</section>
 
 	<!-- footer -->
-	<!-- navbars -->
-	<!-- navbars -->
-	
-
+	<footer class="site-footer bg-dark">
+		<div class="container-lg ">
+			<div class="row mx-5 mt-5 py-4 g-5 text-light">
+				<div class="col-10 col-md-4 my-3 justify-content-around align-items-center">
+					<h3>COME AND RELAX WITH US</h3>
+				</div>
+			
+				<div class="col-10 col-md-5 my-3">
+                        Voluptatibus sint minima hic magnam quos aspernatur labore
+                        repudiandae repellendus porro quia quis pariatur, dolores,
+                        cum atque, debitis rerum sit quam possimus?
+				</div>
+				
+				<div class="col-10 col-md-3 my-3 justify-content-around align-items-center">
+					<a href="#sidebar" class="btn btn-success my-3 " data-bs-toggle="offcanvas"
+						role="button" aria-controls="sidebar">
+						BOOK A TRIP NOW!
+					</a>
+					<p>100% refund</p>
+				</div>
+			</div>
+		</div>
+	</footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" 
